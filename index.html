@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html>
+		<head>	
+		<!--FONTS-->	
+			<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Roboto:100,700' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+			<title>	Pokemon Battle! </title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+			<body>
+	<!--THE INSTRUCTIONS-->			
+				<h1 class="title">Pokemon Battle!</h1>	 
+				<p class="ptitle"> You can select 1 move per turn to damage the 
+				opponent.<br> The goal is to try and get the enemy's health to 0. Good Luck!</p>	
+				<ul>
+					<ol>Sharpen- increases your attack by 3, doesnt do damage.</ol>
+					<ol>Thunder - deals 7 damage.</ol>
+					<ol>Tailwhip - deals 5 damage.</ol>
+					<ol>Scratch - deals 3 damage.</ol>
+					<ol>PP = the amount of times you can use a move.</ol>
+				</ul>	
+ 		 
+			<!--THE STUFF INSDE THE BOX-->	 	
+					<div class="border">
+			<div id="bar1"></div>
+			<div id="bar2"></div>
+				<!--Names and Levels for the Pokemon-->
+						<!--For psyduck-->
+				<div class="pText">
+					<h4 class="pt">Psyduck</h4><h5 class="lp">lvl 48</h5>	
+				</div>
+						<!--For Pikachu-->						 
+				<div class="pikaText">
+					<h4 class="pikat">Pikachu</h4><h5 class="lPika">lvl 50</h5>	
+				</div>	
+					<!--TEXT FOR Messages-->
+					<h4 class="Prepare">What will Pikachu do?</h4>
+					<!--TEXT TO END THE GAME-->
+					<h4 class="hide" id="endtext">Refresh to play again!</h4> 	
+				<!--STAGE OBJECTS-->
+						<img class="battleground" src="stage/battleground.gif">
+						<img class ="duck" src="pokemon/psyduck.png"> 
+						<img id ="health1" src="stage/health.png">
+						<img id="health2" src="stage/health.png">
+						<img class="pika" src="pokemon/pikachu.png">						
+						<img class="talkbox" src="stage/chatbox.png">
+						<img class="bg4moves" src="stage/movesbackground.png">
+					<!--ATTACK IMAGES-->	
+						<img id ="attackHome"" src="moves/attack.png" class="attackHome"> <!--ID ON JAVASCRIPT IS ATTACK HOME-->
+						<img id = "attackOpp"  src="moves/attack.png"> <!--ID In JAVASCRIPT is ATTACK by Opponent--> 	
+		
+				<!-- BATTLE MOVES FOR PIKACHU-->
+				<h6 class="PP" id="scratchpp"> PP Unlimited</h6>
+				<h6 class="PP" id="sharpenpp"> PP <a id="ppsharpen">10</a>/10</h6>
+				<h6 class="PP" id="tailwhippp"> PP <a id="pptailwhip">10</a>/10</h6>
+				<h6 class="PP" id="thunderpp"> PP <a id="ppthunder">5</a>/5</h6>
+						<h4 class="leer">Sharpen</h4>
+						<h4 class="scratch">Scratch</h4>
+						<h4 class="tailwhip">Tailwhip</h4>
+						<h4 class="thunder">Thunder</h4>
+					<!--TR is for Top right,BR is for bottom right,TL if for top left,,
+					BL is for bottom left-->
+						<div class="topDIV">
+							<img src="stage/movesbox.png" class="TL">
+							<img  src="stage/movesbox.png" class="TR">
+						</div>
+						<div class="bottomDIV">	 			
+							<img src="stage/movesbox.png"  class="BL">  
+							<img src="stage/movesbox.png"  class="BR">
+						</div>											 
+					</div>	
+					
+				 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+				 <script src="battle.js"></script>
+			</body>
+	</html>
