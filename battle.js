@@ -18,7 +18,7 @@ var turn = false;
  
 //sharpen move not LEER
 $( ".leer" ).click(function() {
- //CHECKS IF THE MOVES RAN OUT OF THE NUMBER OF TIMES YOU CAN USE THEM 
+ //Checks if the moves ran out of PP
    if(ppsharpen > 0) {
         ppsharpen -=1;  
      $('#ppsharpen').text(ppsharpen);  
@@ -41,7 +41,7 @@ $( ".leer" ).click(function() {
      $(".scratch").addClass("hide");
      $(".thunder").addClass("hide");  
        turn = !turn;
-  //VARIABLE TO STOP THE CPU WHEN HEALATH = 2 
+  //VARIABLE TO STOP THE CPU WHEN HEALTH = 2 
           if (health2 <= 0) {
           $("#endtext").removeClass("hide");
           $("#endtext").addClass("end");
